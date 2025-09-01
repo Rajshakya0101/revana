@@ -1,11 +1,4 @@
 {
-  "builds": [
-    {
-      "src": "package.json",
-      "use": "@vercel/static-build",
-      "config": { "distDir": "dist" }
-    }
-  ],
   "rewrites": [
     { "source": "/api/:path*", "destination": "https://backend-revana.onrender.com/:path*" },
     { "source": "/(.*)", "destination": "/index.html" }
